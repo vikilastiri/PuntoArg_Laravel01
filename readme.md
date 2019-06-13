@@ -1,3 +1,19 @@
+Pasos para instalar el Proyecto
+Descargar el repositorio
+Por consola ingresar a la carpeta del repositorio.
+Ejecutar composer install para que composer descargue todas las carpetas y paquetes necesarios para correr Laravel.
+Revisar que exista archivo .env. Si no está copiar el archivo .env-example y eliminar -example
+Chequear que tenga valores la posicion APP_KEY. Si no está hay que crearla con el comando php artisan key:generate
+Revisar la información de conexión a la db. Son las posicones DB_ .
+Ejecutar php artisan serve para iniciar el servidor web.
+Importante: El repositorio tiene 2 bases de datos movies_db y la base de datos de posteos. Elegir desde env según el caso.
+
+db en root /blend_tm01.zip
+
+Ejecutar php artisan storage:link para guardar y recuperar datos
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">

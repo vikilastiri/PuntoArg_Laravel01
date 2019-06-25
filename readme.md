@@ -6,10 +6,7 @@ Revisar que exista archivo .env. Si no está copiar el archivo .env-example y el
 Chequear que tenga valores la posicion APP_KEY. Si no está hay que crearla con el comando php artisan key:generate
 Revisar la información de conexión a la db. Son las posicones DB_ .
 Ejecutar php artisan serve para iniciar el servidor web.
-Importante: El repositorio tiene 2 bases de datos movies_db y la base de datos de posteos. Elegir desde env según el caso.
-
-db en root /blend_tm01.zip
-
+Elegir desde env según el caso la db
 Ejecutar php artisan storage:link para guardar y recuperar datos
 
 

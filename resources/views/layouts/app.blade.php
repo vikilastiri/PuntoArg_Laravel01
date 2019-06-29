@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('views.name', 'PuntoARG') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -25,7 +25,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/puntoarg.css') }}" rel="stylesheet">
-    {{-- <link href="{{ asset('css/style-@media.css') }}" rel="stylesheet"> --}}
+
 
 
 </head>
@@ -33,29 +33,31 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-blue shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/home') }}">
-                    {{ config('puntoAr.name', 'PuntoArg') }}
+                <a class="marcalogo" href="{{ url('/') }}">
+                    {{ config('', 'PuntoArg') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
 
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
+
+                    <ul class="navbar-nav ml-auto ">
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('ingresar') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Registrarse') }}</a>
                                 </li>
                             @endif
                         @else
@@ -85,6 +87,53 @@
         <main class="py-4">
             @yield('content')
         </main>
+        @section('footer')
+        <footer class="footer">
+          <div class="secciones">
+
+
+          <section class="mas-info">
+            <h2>Más Info:</h2>
+            <ul>
+          <div class="infocard">
+          <div class="info">
+
+            <li><a href="#"><i class="far fa-credit-card"></i><br>Formas de Pago</a>
+            </li>
+
+              </div>
+
+              <div class="info">
+
+
+              <li><a href="#"><i class="fas fa-store"></i><br>PostVenta</a></li>
+                </div>
+                </div>
+            </ul>
+          </section>
+
+          <section class="oficinas">
+            <h2>Nuestras Oficinas</h2>
+             <p> Av. Monroe 860<br>
+            CABA, Buenos Aires<br></p>
+
+            <p>
+            <i class="fas fa-mobile-alt"></i>11-5263-7400 </p>
+
+          </section>
+
+          <section class="social">
+            <h2>¡Seguinos!</h2>
+            <ul>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </section>
+          </div>
+        </footer>
+        @show
     </div>
 </body>
 </html>

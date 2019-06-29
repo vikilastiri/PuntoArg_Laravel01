@@ -26,9 +26,11 @@ body{
 }
 
 /* NAV */
-.navbar-brand{
+
+.marcalogo{
   font-family: 'Baloo Chettan';
   font-size: 2rem;
+  color:white;
 
 }
 

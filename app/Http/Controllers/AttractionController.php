@@ -14,7 +14,9 @@ class AttractionController extends Controller
      */
     public function index()
     {
-        //
+      $attractions = Attraction::all();
+
+      return view('attractions')->with('attractions', $attractions);
     }
 
     /**

@@ -19,8 +19,7 @@
   	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
   	<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
-  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
+  		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -50,19 +49,58 @@
                     <!-- Right Side Of Navbar -->
 
                     <ul class="navbar-nav ml-auto ">
+                      <li class="nav-item dropdown">
+                        <a class="linkmenu dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Lugares
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Patagonia</a>
+                          <a class="dropdown-item" href="#">Cuyo y Centro</a>
+                          <a class="dropdown-item" href="#">NOA</a>
+                          <a class="dropdown-item" href="#">Litoral</a>
+                        </div>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="linkmenu dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Actividades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">EcoTurismo</a>
+                          <a class="dropdown-item" href="#">Extremo</a>
+                          <a class="dropdown-item" href="#">Museos</a>
+                          <a class="dropdown-item" href="#">Tours</a>
+                        </div>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="linkmenu dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Tarjetas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <span class="dropdown-header">.ArgPass</span>
+                          <span class=""></span>
+                          <a class="dropdown-item" href="#">Tarjeta 3 Días</a>
+                          <a class="dropdown-item" href="#">Tarjeta 7 Días</a>
+                          <a class="dropdown-item" href="#">Tarjeta 15 Días</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Formas de pago</a>
+                          <a class="dropdown-item" href="#">FAQ</a>
+                        </div>
+                      </li>
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('ingresar') }}</a>
+                                <a class="linkmenu" href="{{ route('login') }}">{{ __('ingresar') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Registrarse') }}</a>
+                                    <a class="linkmenu" href="{{ route('register') }}">{{ __('Registrarse') }}</a>
                                 </li>
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="linkmenu dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
@@ -89,7 +127,7 @@
         </main>
         @section('footer')
         <footer class="footer">
-          <div class="secciones">
+          <div class="secciones col-md-11">
 
 
           <section class="mas-info">

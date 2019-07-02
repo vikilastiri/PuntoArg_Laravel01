@@ -18,7 +18,7 @@ class CreateAttractionsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->text('description');
-            $table->integer('rating');
+            $table->integer('rating')->nullable();
             $table->string('featured_img');
             $table->bigInteger('category_id')->unsigned();
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');

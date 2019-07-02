@@ -20,4 +20,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/attractions', 'AttractionsController@index');
+Route::get('/addAttractions', function(){
+  return view('addAttractions');
+});

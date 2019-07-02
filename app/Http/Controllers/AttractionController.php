@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Attraction;
 use Illuminate\Http\Request;
+// use DB;
+// use Input;
+// use Storage;
 
 class AttractionController extends Controller
 {
@@ -14,10 +17,18 @@ class AttractionController extends Controller
      */
     public function index()
     {
-      $attractions = Attraction::all();
-
-      return view('attractions')->with('attractions', $attractions);
-    }
+    //   $attractions = Attraction::all();
+    //   $attractions->each(function($aatrractions){
+    //     $attractions->name;
+    //     $attractions->description;
+    //     $attractions->featured_img;
+    //     $attractions->category_id;
+    //     $attractions->location_id;
+    //
+    //   })
+    //
+    //   return view('attractions')->with('attractions', $attractions);
+    // }
 
     /**
      * Show the form for creating a new resource.

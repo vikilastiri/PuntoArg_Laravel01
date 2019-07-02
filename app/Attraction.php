@@ -13,10 +13,10 @@ class Attraction extends Model
 
   public function location()
     {
-        return $this->belongsTo(Location::class);
-    };
+        return $this->belongsTo('App\Location','location_id');
+    }
     public function category()
       {
-          return $this->belongsTo(Category::class);
+          return $this->belongsTo(Category::class,'category_id');
       }
 }

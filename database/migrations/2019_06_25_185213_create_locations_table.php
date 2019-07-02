@@ -14,7 +14,6 @@ class CreateLocationsTable extends Migration
     public function up()
     {
         Schema::create('locations', function (Blueprint $table) {
-          $table->engine = 'InnoDB';
             $table->bigIncrements('id');
              $table->string('name');
             $table->timestamps();

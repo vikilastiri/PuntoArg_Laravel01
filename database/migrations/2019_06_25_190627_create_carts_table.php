@@ -14,15 +14,13 @@ class CreateCartsTable extends Migration
     public function up()
     {
         Schema::create('carts', function (Blueprint $table) {
-          $table->engine = 'InnoDB';
           $table->bigIncrements('id');
           $table->string('name');
           $table->text('description');
           $table->decimal('price',6,2);
-          $table->string('featured_img');
           $table->integer('cant')->nullable();
           $table->bigInteger('voucher_id')->unsigned();
-          $table->foreign('voucher_id')->references('id')->on('vouchers')->onDelete('cascade');
+          $table->foreign('voucher_id')->references('id')->on('vouchers');
           $table->integer('status')->default(0);
           $table->integer('cart_number')->nullable();
           $table->timestamps();

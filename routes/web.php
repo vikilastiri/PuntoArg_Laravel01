@@ -22,4 +22,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/addAttractions', function(){
   return view('addAttractions');
-});
+ });
+ Route::get('attraction',function(){
+   return view('attraction');
+  });
+
+  
+Route::get('/attraction/{id}', 'AttractionController@show');
+Route::get('/addAttractions', 'AttractionController@create');
+Route::post('/addAttractions', 'AttractionController@store');
+// Route::post('/deletepost', 'PostController@delete');

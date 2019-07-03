@@ -79,14 +79,15 @@
       <h2 class="titulo-desta">Actividades Destacadas</h2>
       </span>
       <div class="container">
-        
+
 
       </div>
     </section>
 
     </div>
 
-
+@yield('atracciones')
 
 </div>
+
 @endsection

@@ -19,10 +19,10 @@ class CreateAttractionsTable extends Migration
             $table->text('description');
             $table->integer('rating')->nullable();
             $table->string('featured_img');
-            $table->bigInteger('category_id')->unsigned();
-            $table->foreign('category_id')->references('id')->on('categories');
-            $table->bigInteger('location_id')->unsigned();
-            $table->foreign('location_id')->references('id')->on('locations');
+            $table->bigInteger('category_id')->unsigned()->nullable();
+            $table->foreign('category_id')->references('id')->on('categories')->nullable();
+            $table->bigInteger('location_id')->unsigned()->nullable();
+            $table->foreign('location_id')->references('id')->on('locations')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

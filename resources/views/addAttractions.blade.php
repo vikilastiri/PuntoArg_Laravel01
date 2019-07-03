@@ -1,43 +1,56 @@
 @extends('layouts.app')
 
+{{-- @section('title', 'New Attraction')
+@endsection --}}
 @section('content')
 <div class="container">
-  <div class="card">
-      <div class="card-header">{{ __('AGREGAR ATRACCION') }}</div>
-  <div class="card-body registro2">
-      <form method="POST" action="{{ route('login') }}">
-          @csrf
+    <div class="card">
+        <div class="card-header">{{ __('AGREGAR ATRACCION') }}
+        </div>
 
-          <div class="form-group row  ">
-              <div class="col-md-6">
-                  <input  type="text" class="form-control" name="name" value="{{ old('name') }}" required placeholder="Nombre" autocomplete="name" autofocus>
-              </div>
-          </div>
-          <div class="form-group row  ">
-              <div class="col-md-6">
-                <textarea style="width:600px; height:200px;" name="description" value="{{ old('description') }}" required placeholder="Descripcion" autocomplete="description" autofocus>
+        <div class="card-body registro2">
+            <form class="col-md-6 offset-md-3" action="/addAttractions" method="POST" enctype="multipart/form-data">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                    {{-- @dd($errors->all()) --}}
+                    <li>{{$error}}</li>
+                    @endforeach
+                </ul>
+                @csrf
+                <div class="form-group row  ">
+
+                    <div class="col-md-6">
+                        <input type="text" id="name" class="form-control" name="name" value="{{ old('name') }}" placeholder="Nombre" autofocus>
+                    </div>
+                </div>
+                <div class="form-group row  ">
+                    <div class="col-md-6">
+                        <label for="description">Descripción</label>
+                        <textarea style="width:600px; height:200px;" id="description" name="description" value="" autofocus>
 
               </textarea>
-              </div>
-              </div>
+                    </div>
+                </div>
+                <div class="form-group row  ">
+                    <div class="col-md-6">
+                        <input type="file" id="featured_img" class="form-control" name="featured_img" value="" required style="width:300px;" autofocus>
+                    </div>
+                </div>
+                {{-- <div class="col-md-6">
+                <input  type="file"
+                      id="category_id" class="form-control" name="category_id" value="" required style="width:300px;" autofocus>
+              </div> --}}
 
-              <div class="form-group row  ">
-                  <div class="col-md-6">
-                      <input  type="file" class="form-control" name="featured_img" value="{{ old('featured_img') }}" required style="width:300px;" autocomplete="featured_img" autofocus>
-                  </div>
-              </div>
+                <div class="form-group row  ">
+                    <div class="col-md-6">
+                        <button class="btn btn-info" type="submit">Guardar</button>
 
+                    </div>
+                </div>
+            </form>
 
-
-          <div class="form-group row  ">
-              <div class="col-md-6">
-
-                    <button type="submit" class="btn btn-primary">
-                        {{ __('Enviar') }}
-                    </button>
-              </div>
-          </div>
-      
-</div>
+        </div>
+    </div>
 </div>
 @endsection
+@section('footer', '')

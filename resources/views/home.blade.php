@@ -78,7 +78,15 @@
     <span class="span-desta">
         <h2 class="titulo-desta">Actividades Destacadas</h2>
     </span>
+    @forelse ($attractions as $attraction)
+      <article class="card text-center tj-W">
+        <h5 class="card-title">{{ $attraction->name }}</h5>
 
+        <a href="#" class="btn btn-primary">+ Info</a>
+      </article>
+    @empty
+      <p class="card-text">No hay atracctiones disponibles</p>
+    @endforelse
 </section>
 </div>
 </div>

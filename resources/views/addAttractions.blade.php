@@ -39,7 +39,7 @@
 
                 <div class="form-goup">
                   <label for="">Categorias</label>
-                  <select class="form-control" name="categories">
+                  <select class="form-control" name="category_id">
                     @foreach ($categories as $category)
                       <option value="{{ $category->id }}">{{$category->name}}</option>
 

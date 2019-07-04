@@ -24,10 +24,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-      // $attractions= Attraction::shuffle()->take(5);
-      dd("home");
-      //
-      //   return view('home')->with('attractions', $attractions);
+      $attractions= Attraction::all()->shuffle()->take(5);
+
+        return view('home')->with('attractions', $attractions);
     }
     // public function showAttraction($id){
     //   $attraction= Attraction::find($id);

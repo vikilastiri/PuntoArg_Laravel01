@@ -47,6 +47,6 @@ Route::get('/vouchers/{id}', 'VoucherController@show');
 
 Route::get('/addVoucher', 'VoucherController@create');
 //
-// Route::post('/addVoucher', 'VoucherController@store');
+Route::post('/addVoucher', 'VoucherController@store');
 
 // Route::voucher('/deletevoucher', 'VoucherController@delete');

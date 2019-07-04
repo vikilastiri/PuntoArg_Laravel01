@@ -23,6 +23,12 @@ class HomeController extends Controller
      */
     public function index()
     {
+
         return view('home');
     }
+    // public function showAttraction($id){
+    //   $attraction= Attraction::find($id);
+    //   $attraction->get();
+    //     return view('home')->with('home', $attraction);
+    // }
 }

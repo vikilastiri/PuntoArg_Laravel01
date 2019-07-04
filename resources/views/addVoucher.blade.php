@@ -5,11 +5,11 @@
 @section('content')
 <div class="container">
     <div class="card">
-        <div class="card-header">{{ __('AGREGAR ATRACCION') }}
+        <div class="card-header">{{ __('AGREGAR VOUCHER') }}
         </div>
 
         <div class="card-body registro2">
-            <form class="col-md-6 offset-md-3" action="/addAttractions" method="POST" enctype="multipart/form-data">
+            <form class="col-md-6 offset-md-3" action="/addVoucher" method="POST" enctype="multipart/form-data">
                 <ul>
                     @foreach ($errors->all() as $error)
                     {{-- @dd($errors->all()) --}}
@@ -31,12 +31,17 @@
               </textarea>
                     </div>
                 </div>
+                <div class="form-goup row">
+                  <div class="col-md-6">
+                    <input type="number" required name="price" min="0" value="">
+                  </div>
+                </div>
                 <div class="form-group row  ">
                     <div class="col-md-6">
                         <input type="file" id="featured_img" class="form-control" name="featured_img" value="" required style="width:300px;" autofocus>
                     </div>
                 </div>
-              
+
 
                 <div class="form-group row  ">
                     <div class="col-md-6">

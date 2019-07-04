@@ -24,7 +24,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/puntoarg.css') }}" rel="stylesheet">
-  
+
 
 
 
@@ -63,15 +63,16 @@
                       </li>
 
                       <li class="nav-item dropdown">
-                        <a class="linkmenu dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Actividades
+                        <a class="linkmenu "href="/attractions">Atracciones</a>
+                        {{-- <a class="linkmenu dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Atracciones
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="#">EcoTurismo</a>
                           <a class="dropdown-item" href="#">Extremo</a>
                           <a class="dropdown-item" href="#">Museos</a>
                           <a class="dropdown-item" href="#">Tours</a>
-                        </div>
+                        </div> --}}
                       </li>
 
                       <li class="nav-item dropdown">

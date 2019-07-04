@@ -15,17 +15,9 @@ class AttractionController extends Controller
      */
     public function index()
     {
-      // $attractions = Attraction::all();
-      // $attractions->each(function($attractions){
-      //   $attractions->name;
-      //   $attractions->description;
-      //   $attractions->featured_img;
-      //   $attractions->category_id;
-      //   $attractions->location_id;
-      //
-      // })
-      //
-      // return view('attraction')->with('attraction', $attractions);
+      $attractions = Attraction::all();
+
+      return view('attractions')->with('attractions', $attractions);
     }
 
     /**
@@ -79,7 +71,7 @@ class AttractionController extends Controller
         // dd($request, $post);
         $attraction->save();
 
-        return redirect('/');
+        return redirect('/attractions');
 
     }
 
@@ -91,9 +83,9 @@ class AttractionController extends Controller
      */
     public function show($id)
     {
-      $attraction= Post::find($id);
+      $attraction= Attraction::find($id);
       $attraction->get();
-        return view('attraction')->with('Attraction', $attraction);
+        return view('attraction')->with('attraction', $attraction);
     }
 
     /**

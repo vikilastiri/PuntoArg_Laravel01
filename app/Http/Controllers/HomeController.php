@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Attraction;
 
 class HomeController extends Controller
 {
@@ -13,7 +14,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     /**
@@ -23,8 +24,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-
-        return view('home');
+      // $attractions= Attraction::shuffle()->take(5);
+      dd("home");
+      //
+      //   return view('home')->with('attractions', $attractions);
     }
     // public function showAttraction($id){
     //   $attraction= Attraction::find($id);

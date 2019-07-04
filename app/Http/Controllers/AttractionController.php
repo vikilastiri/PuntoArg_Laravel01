@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Attraction;
+use App\Category;
 use Illuminate\Http\Request;
 
 
@@ -15,9 +16,9 @@ class AttractionController extends Controller
      */
     public function index()
     {
-      $attractions = Attraction::all();
+      $attraction = Attraction::all();
 
-      return view('attractions')->with('attractions', $attractions);
+      return view('attractions')->with('attractions', $attraction);
     }
 
     /**
@@ -27,7 +28,9 @@ class AttractionController extends Controller
      */
     public function create()
     {
-        return view('addAttractions');
+      $categories=Category::all();
+
+        return view('addAttractions')->with('categories', $categories);
     }
 
     /**

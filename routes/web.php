@@ -11,14 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
 
 Auth::routes();
 
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 // Route::get('/home', 'HomeController@showAttraction');
 
 Route::get('/addAttractions', function(){
@@ -37,9 +37,6 @@ Route::post('/addAttractions', 'AttractionController@store');
 
 // Rutas para vouchers y addVoucher
 
-Route::get('/addvoucher', function(){
-  return view('addVoucher');
- });
  Route::get('vouchers',function(){
    return view('vouchers');
   });
@@ -49,7 +46,7 @@ Route::get('/addvoucher', function(){
 Route::get('/vouchers/{id}', 'VoucherController@show');
 
 Route::get('/addVoucher', 'VoucherController@create');
-
-Route::post('/addVoucher', 'VoucherController@store');
+//
+// Route::post('/addVoucher', 'VoucherController@store');
 
 // Route::voucher('/deletevoucher', 'VoucherController@delete');

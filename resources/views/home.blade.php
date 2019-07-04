@@ -78,7 +78,7 @@
     <span class="span-desta">
         <h2 class="titulo-desta">Actividades Destacadas</h2>
     </span>
-    
+
 </section>
 </div>
 </div>

@@ -36,7 +36,22 @@
                         <input type="file" id="featured_img" class="form-control" name="featured_img" value="" required style="width:300px;" autofocus>
                     </div>
                 </div>
-              
+
+                <div class="form-goup">
+                  <label for="">Categorias</label>
+                  <select class="form-control" name="categories">
+                    @foreach ($categories as $category)
+                      <option value="{{ $category->id }}">{{$category->name}}</option>
+
+                    @endforeach
+                  </select>
+                </div>
+                <div class="form-goup">
+                  <label for="">Provincia</label>
+                  <select class="form-control" name="locations">
+
+                  </select>
+                </div>
 
                 <div class="form-group row  ">
                     <div class="col-md-6">

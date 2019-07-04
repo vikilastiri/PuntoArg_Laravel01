@@ -14,7 +14,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $categories = Category::all();
     }
 
     /**
@@ -44,9 +44,10 @@ class CategoryController extends Controller
      * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(Category $category)
+    public function show($id)
     {
-        //
+      $categories= Category::find($id);
+      $categories->get();
     }
 
     /**

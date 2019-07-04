@@ -33,7 +33,7 @@
                 </div>
                 <div class="form-goup row">
                   <div class="col-md-6">
-                    <input type="number" required name="price" min="0" value="">
+                    <input type="number" required name="price" value="">
                   </div>
                 </div>
                 <div class="form-group row  ">

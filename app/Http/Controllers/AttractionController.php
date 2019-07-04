@@ -47,8 +47,8 @@ class AttractionController extends Controller
         $rules = [ //https://laravel.com/docs/5.8/validation#rule-size
           "name" => "string|max:255|filled",
           "description" => "string",
-
           "featured_img" => "image",
+          "categoy_id"=>"string",
         ];
         $messages = [
           "filled" => ":attribute no puede estar vacío.",
@@ -70,6 +70,7 @@ class AttractionController extends Controller
         //Paso 1:
         $attraction->name = $request->name;
         $attraction->description = $request->description;
+        $attraction->category_id= $request->category_id;
 
         // dd($request, $post);
         $attraction->save();

@@ -43,15 +43,15 @@ class VoucherController extends Controller
         $rules = [ //https://laravel.com/docs/5.8/validation#rule-size
           "name" => "string|max:255|filled",
           "description" => "string",
-          "price"=>"decimal|filled",
-          "featured_img" => "image",
+          "price"=>"numeric",
+          "featured_img" => "image"
         ];
         $messages = [
           "filled" => ":attribute no puede estar vacío.",
           "string" => ":attribute es debe ser texto.",
           "max" => ":attribute tiene un máximo de :max",
           "image"=>"el archivo debe ser del tipo .jpeg, .png, .bmp, .gif, o .svg",
-          "decimal"=>":attribute debe ser decimal"
+          "numeric"=>":attribute debe ser un numero"
         ];
 
         $this->validate($request, $rules, $messages); //Son 3 arrays asociativos

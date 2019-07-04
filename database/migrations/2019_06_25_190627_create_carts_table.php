@@ -19,9 +19,10 @@ class CreateCartsTable extends Migration
           $table->text('description');
           $table->decimal('price',6,2);
           $table->integer('cant')->nullable();
-          $table->bigInteger('voucher_id')->unsigned();
-          $table->foreign('voucher_id')->references('id')->on('vouchers');
-          $table->integer('status')->default(0);
+           $table->bigInteger('user_id')->unsigned();
+          // $table->bigInteger('voucher_id')->unsigned();
+          // $table->foreign('voucher_id')->references('id')->on('vouchers');
+          // $table->integer('status')->default(0);
           $table->integer('cart_number')->nullable();
           $table->timestamps();
           $table->softDeletes();

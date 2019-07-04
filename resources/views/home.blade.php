@@ -80,7 +80,10 @@
     </span>
     @forelse ($attractions as $attraction)
       <article class="card text-center tj-W">
-        <h5 class="card-title">{{ $attraction->name }}</h5>
+
+        <img src="/storage/attractions/{{$attraction->featured_img}}" alt="">
+          <h3 class="card-title">{{ $attraction->name }}</h3>
+        <p>{{$attraction->description}}</p>
 
         <a href="#" class="btn btn-primary">+ Info</a>
       </article>

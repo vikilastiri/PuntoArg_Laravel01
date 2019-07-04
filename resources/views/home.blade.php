@@ -54,6 +54,7 @@
                         <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
+
                 <div class="card text-center tj-W" style="">
                     <img src="http://placeimg.com/640/360/tech" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -74,19 +75,37 @@
             </div>
 </section>
 <!--PRINCIPALES-->
-<section class="principales">
+<section class="carousel">
     <span class="span-desta">
         <h2 class="titulo-desta">Actividades Destacadas</h2>
     </span>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="tj-descuento col-md-12">
     @forelse ($attractions as $attraction)
-      <article class="card text-center tj-W">
-        <h5 class="card-title">{{ $attraction->name }}</h5>
+  {{-- Tarjeta para cada atraccion --}}
 
-        <a href="#" class="btn btn-primary">+ Info</a>
-      </article>
+
+              <div class="card text-center tj-W" style="">
+                  <img src="http://placeimg.com/640/360/tech" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">.ArgPass 3 Días</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+              </div>
+
+
+
+
+
+  {{-- Tarjeta para cada atraccion --}}
     @empty
       <p class="card-text">No hay atracctiones disponibles</p>
     @endforelse
+        </div>
+      </div>
+    </div>
 </section>
 </div>
 </div>

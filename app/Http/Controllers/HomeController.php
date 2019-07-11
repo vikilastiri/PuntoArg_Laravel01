@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Attraction;
-
+use App\Voucher;
 class HomeController extends Controller
 {
     /**
@@ -24,10 +24,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-       $attractions= Attraction::all()->shuffle()->take(5);
-      // dd("home");
-      //
-         return view('home')->with('attractions', $attractions);
+      $attractions= Attraction::all()->shuffle()->take(6);
+      $vouchers=Voucher::all();
+        return view('home')->with('attractions', $attractions)->with('vouchers', $vouchers);
     }
     // public function showAttraction($id){
     //   $attraction= Attraction::find($id);

@@ -28,7 +28,7 @@ Route::get('/addAttractions', function(){
    return view('attractions');
   });
   Route::get('/attractions', 'AttractionController@index');
-
+Route::get('/attractions/buscar', 'AttractionController@search');
 
 Route::get('/attractions/{id}', 'AttractionController@show');
 Route::get('/addAttractions', 'AttractionController@create');

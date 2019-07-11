@@ -31,83 +31,53 @@
             </a>
         </div>
     </div>
+{{-- VOUCHERS --}}
+<div class="container flex-container2">
+    @foreach ($vouchers as $voucher)
+<article class="destacado card text-center">
 
-    <div class="container">
-        <div class="row justify-content-center">
+  <a href="#" class="desta-link desta"><img src="/storage/vouchers/{{$voucher->featured_img}}" alt=""> </a>
+    <h5 class="att_name">{{$voucher->name}}</h5>
+    <p class="txt-desc">{{$voucher->description}}</p>
+    <ul class="">
+      <li class=""><a href="/vouchers/{{$voucher->id}}/addtocart" class="btn btn-primary">Comprar</a></li>
+    </ul>
 
+      </article>
+        @endforeach
+  </div>
 
-            <div class="tj-descuento col-md-12">
-                <div class="card text-center tj-W" style="">
-                    <img src="http://placeimg.com/640/360/tech" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">.ArgPass 3 Días</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="card text-center tj-W" style="">
-                    <img src="http://placeimg.com/640/360/tech" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">.ArgPass 7 Días</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="card text-center tj-W" style="">
-                    <img src="http://placeimg.com/640/360/tech" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">.ArgPass 15 Días</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
-                </div>
-                <div class="card text-center tj-W" style="">
-                    <img src="http://placeimg.com/640/360/tech" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">.ArgPass 15 Días</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
-                </div>
-
-            </div>
 </section>
-<!--PRINCIPALES-->
-<section class="carousel">
-    <span class="span-desta">
-        <h2 class="titulo-desta">Actividades Destacadas</h2>
+<!--ATRACCIONES DESTACADAS-->
+
+
+<section class="titulo-seccion">
+    <span class="">
+        <h4 class="titulo-desta">Atracciones Destacadas</h4>
     </span>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="tj-descuento col-md-12">
-    @forelse ($attractions as $attraction)
-  {{-- Tarjeta para cada atraccion --}}
 
-
-              <div class="card text-center tj-W" style="">
-                  <img src="http://placeimg.com/640/360/tech" class="card-img-top" alt="...">
-                  <div class="card-body">
-                      <h5 class="card-title">.ArgPass 3 Días</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Comprar</a>
-                  </div>
-              </div>
-
-
-
-
-
-  {{-- Tarjeta para cada atraccion --}}
-    @empty
-      <p class="card-text">No hay atracctiones disponibles</p>
-    @endforelse
-        </div>
-      </div>
-    </div>
 </section>
-</div>
-</div>
+<section class="destacados">
+<div class="flex-container2  container  ">
+    @forelse ($attractions as $attraction)
+
+<article class="destacado ">
+
+  <a href="#" class="desta-link desta"><img src="/storage/attractions/{{$attraction->featured_img}}" alt=""> </a>
+    <h5 class="att_name">{{$attraction->name}}</h5>
+    {{-- <p class="txt-desc">{{$attraction->description}}</p> --}}
+    <ul class="consulta-desta">
+      <li class="consulta"><a href="#">+ Info</a></li>
+    </ul>
+
+      </article>
+    @empty
+    @endforelse
+  </div>
+  <div class="flex-container">
+    <span class="btn btn-primary ver-mas"> <a href="/attractions">Ver más</a> </span>
+  </div>
+</section>
+
 
 @endsection

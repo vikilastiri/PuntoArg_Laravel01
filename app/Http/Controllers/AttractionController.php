@@ -26,6 +26,23 @@ class AttractionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+     public function search(){
+  $stmt = Attraction::where('name', 'like', '%'.$_GET["search"].'%')->orwhere('description', 'like', '%'.$_GET["search"].'%')
+  ->orderBy('name')
+  ->paginate(6);
+  $stmt->withPath('?search='.$_GET['search']);
+  //dd($stmt);
+
+
+  if (strlen($stmt!=null)) {
+    return view('attractions')->with('attractions', $stmt);
+  }else{
+      return view('attractions');
+  }
+
+}
+
     public function create()
     {
       $categories=Category::all();
@@ -125,12 +142,12 @@ class AttractionController extends Controller
     {
         //
     }
-    public function delete(Request $request){
-      $id = $request->id;
-      $attractionABorrar = Attraction::find($id);
-      $attractionABorrar->delete();
-
-      return redirect("/");
-
-    }
+    // public function delete(Request $request){
+    //   $id = $request->id;
+    //   $attractionABorrar = Attraction::find($id);
+    //   $attractionABorrar->delete();
+    //
+    //   return redirect("/");
+    //
+    // }
 }

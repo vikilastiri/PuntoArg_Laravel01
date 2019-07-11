@@ -31,6 +31,7 @@ body{
   font-family: 'Baloo Chettan';
   font-size: 2rem;
   color:white;
+  text-decoration: none;
 
 }
 
@@ -50,12 +51,52 @@ body{
   margin-right: 10px;
 
 }
+.carrito-ul{
+  background-color:white;
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+.carrito-lista{
+background-color:white;
+padding: 25px;
+margin-right: 10px;
+width: 200px;
+
+
+}
+.history-li{
+background-color:white;
+padding: 25px;
+margin-right: 10px;
+width: 200px;
+margin-bottom: 25px;
+
+}
+.history-ul{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
 .perfil img{
   display: inline-flex;
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
 }
+.ver-mas{
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.ver-mas a{
+  color: white;
+  text-decoration: none;
+
+
+}
+
 /*MENU ICONOS Y BARRAHAMBURGUER*/
 
 .error {
@@ -130,7 +171,10 @@ body{
   width:100vw;
 }
 
+.paginacion{
 
+  margin-top: 15px;
+}
 
 /*SECCION PRINCIPAL*/
 .faq{
@@ -151,18 +195,20 @@ body{
   background-color: #0064ff30;
 
 }
-.principales{
+
+/* *SECCION PRINCIPAL*/
+.titulo-seccion{
   text-align:center;
-  margin-top: 0;
-  background-color: #0064ff30;
-  padding: 0;
   width: 100vw;
+  margin-bottom: 15px;
+
 
 }
 .articulo {
   width:100vw;
   margin: 0 auto;
-  display: inline-block;
+
+   display: inline-block;
   padding: 0;
   background-color: white;
 }
@@ -197,18 +243,124 @@ body{
   font-size: 24px;
   font-size: 1.4rem;
 }
+.preguntas{
+  background-color: yellow;
 
+}
 
+.buscador input[type="text"]
+{
+  width: 300px;
+  outline: none;
+  margin-top: 25px;
+
+  border-radius: 2px;
+}
+.redo-search{
+  margin-top: 22px;
+  margin-left: 10px;
+}
+/*DESTACADOS*/
+
+.destacados {
+
+  margin: 0 auto;
+  margin-bottom: -25px;
+  margin-top: -25px;
+  display: inline-block;
+  padding: 0;
+  justify-content: center;
+  text-align:center;
+    background-color: #0064ff30;
+  padding-bottom: 10px;
+  width: 100vw;
+
+}
+.destacado{
+  width: 100%;
+  margin: 0 auto;
+  display:inline-block;
+  background-color: white;
+}
+.destacado a{
+  color:white;
+}
+.descripcion h3{
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  padding-top: 30px;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: left;
+  height: 45px;
+}
+.destacado p{
+  text-align: justify;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 5px;
+}
+.destacado img{
+  width:100%;
+
+}
+.destacados ul{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+.destacados ul li{
+  display: inline-flex;
+
+}
+.precio-desta{
+  font-weight: bold;
+  background: blue;
+  padding: 5px;
+}
+.consulta{
+  color:white;
+  background: black;
+  padding: 5px;
+}
+.consulta-desta{
+  margin-bottom: 5px;
+}
 .titulo-desta{
   background-color: #0D47A1;
   padding: 10px;
   width: 100vw;
   display: inline-block;
-  font-family: 'Oswald';
+  font-family: 'Lato';
   margin-top: 0;
   color: white;
 }
+.total{
+  background-color: #0D47A1;
+  color: white;
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  padding-right: 15px;
 
+  margin-top: 25px;
+
+
+}
+.total h5{
+  margin-top: 10px;
+}
+
+.search-attractions{
+  background-color: #0D47A1;
+  display: inline-block;
+  width: 100vw;
+}
+/*---------------------*/
 /*---------------------*/
 
 /* REGISTRO Y LOGIN */
@@ -261,9 +413,9 @@ margin: 0 auto;
   width:100vw;
   color:white;
   text-align:center;
-  padding: 10px;
-  font-size: 1.3rem;
-  margin-top: 5px;
+
+  font-size: 1rem;
+
 
 }
 .secciones{
@@ -301,8 +453,31 @@ margin: 0 auto;
 .social i{
   color: white;
   padding: 10px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 
+}
+.container a{
+text-decoration: none;
+
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   margin-bottom: 25px;
+}
+
+.flex-container2{
+  display: flex;
+  flex-wrap: wrap;
+   flex-direction:row;
+   justify-content: space-between;
+   margin-top: 40px;
+   margin-bottom: 30px;
+}
+.att_name{
+  margin-top: 20px;
 }
 .oficinas{
   text-align:center;
@@ -318,6 +493,7 @@ margin: 0 auto;
 .linkmenu{
   color:white;
   padding:10px;
+  text-decoration: none;
 }
 /* MEDIA  */
 @media (min-width:768px) {
@@ -345,9 +521,8 @@ margin: 0 auto;
   }
 
   .destacado{
-    width:25%;
-    width: 25%;
-    margin: 10px;
+    width:32%;
+    margin-bottom: 10px;
   }
 
 
@@ -373,6 +548,7 @@ margin: 0 auto;
     .footer{
       display: flex;
       justify-content: space-around;
+
     }
 
     .fa-bars{
@@ -397,6 +573,18 @@ margin: 0 auto;
 .carousel{
   margin-top: -24px;
   padding:0;
+}
+
+.txt-desc{
+word-wrap: break-word;
+}
+
+.articulos-desta{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
 }
 
 

@@ -37,7 +37,7 @@
                     {{ config('', 'PuntoArg') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon "></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,29 +50,9 @@
                     <!-- Right Side Of Navbar -->
 
                     <ul class="navbar-nav ml-auto ">
-                      <li class="nav-item dropdown">
-                        <a class="linkmenu dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Lugares
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Patagonia</a>
-                          <a class="dropdown-item" href="#">Cuyo y Centro</a>
-                          <a class="dropdown-item" href="#">NOA</a>
-                          <a class="dropdown-item" href="#">Litoral</a>
-                        </div>
-                      </li>
 
                       <li class="nav-item dropdown">
                         <a class="linkmenu "href="/attractions">Atracciones</a>
-                        {{-- <a class="linkmenu dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Atracciones
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">EcoTurismo</a>
-                          <a class="dropdown-item" href="#">Extremo</a>
-                          <a class="dropdown-item" href="#">Museos</a>
-                          <a class="dropdown-item" href="#">Tours</a>
-                        </div> --}}
                       </li>
 
                       <li class="nav-item dropdown">
@@ -90,10 +70,13 @@
                           <a class="dropdown-item" href="#">FAQ</a>
                         </div>
                       </li>
+                      <li class="nav-item dropdown">
+                        <a class="linkmenu "href="/cart">Carrito</a>
+                      </li>
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="linkmenu" href="{{ route('login') }}">{{ __('ingresar') }}</a>
+                                <a class="linkmenu" href="{{ route('login') }}">{{ __('ingresar') }} </a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
@@ -128,11 +111,11 @@
             @yield('content')
         </main>
         @section('footer')
-        <footer class="footer">
-          <div class="secciones col-md-11">
+        <footer class="footer ">
+          <div class="container secciones ">
 
 
-          <section class="mas-info">
+          <section class="mas-info " >
             <h2>Más Info:</h2>
             <ul>
           <div class="infocard">

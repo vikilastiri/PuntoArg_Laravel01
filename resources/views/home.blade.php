@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+  <div class="titulo">
+    <p>Excursiones por todo el País</p>
+  </div>>
 <section class="carousel">
 
     <div class="">

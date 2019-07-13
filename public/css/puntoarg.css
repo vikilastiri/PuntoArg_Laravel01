@@ -16,14 +16,30 @@ a{
 }
 
 /* MAIN*/
+.fondo{
+  background-image: url("/storage/img/fondo.jpg");
+   opacity:0.1;
+   position:absolute;
+   top:0;
+   bottom:0;
+   right:0;
+   left:0;
+   background-repeat: repeat;
+   background-size: cover;
+   z-index:-1;
+   width: 100%;
+}
 body{
 
   font-family: 'Roboto Condensed', sans-serif;
 
+
+
+
 }
 
 .carousel{
-  margin-top: -24px;
+  margin-top: -47px;
 }
 /* NAV */
 
@@ -157,14 +173,17 @@ flex-wrap: wrap;
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 25%;
     left: 50%;
     font-family: 'Oswald';
-    font-size: 1.3rem;
-  text-shadow: 2px -2px 1px rgba(0,0,0,0.5);
+    text-shadow: 2px -2px 1px rgba(0,0,0,0.5);
+     z-index:100;
+}
+.titulo p{
+  font-size: 1.3rem;
 }
 .hero img{
   margin: 0auto;
@@ -364,7 +383,11 @@ flex-wrap: wrap;
 /*---------------------*/
 
 /* REGISTRO Y LOGIN */
-
+.card-header{
+  background-color:#0D47A1;
+  color: white;
+  font: Roboto;
+}
 .login{
   font-size:1rem;
 }
@@ -378,19 +401,25 @@ flex-wrap: wrap;
   .btn-primary{
     background-color:#0D47A1;
   }
+  /* .btn-secondary{
+    background-color:#0064ff30;
+  } */
 
-.datosUsuario input[type="email"], input[type="password"], input[type="usuario"]{
+.datosUsuario input[type="email"], input[type="password"], input[type="text"]{
   padding-left: 45px;
   outline: none;
   box-sizing: border-box;
+  width:300px;
 }
 
 .datosUsuario {
   position: relative;
+
+
 }
 .datosUsuario i {
   position: absolute;
-  left: 5%;
+  left: 8%;
   /*top: 35%;*/
   top: 13px;
   color: #aaa;
@@ -496,12 +525,29 @@ text-decoration: none;
   text-decoration: none;
 }
 /* MEDIA  */
+@media (min-width:540px){
+  .datosUsuario i {
+    left: 6%;
+
+
+  }
+}
 @media (min-width:768px) {
   .tj-descuento{
     display: flex;
     justify-content: space-between;
 
   }
+
+  /* .datosUsuario input[type="email"], input[type="password"], input[type="text"]{
+    padding-left: 45px;
+    outline: none;
+    box-sizing: border-box;
+    width:30vw;
+
+
+
+  } */
 
   .datosUsuario i {
     left: 8%;
@@ -571,7 +617,7 @@ text-decoration: none;
   justify-content: space-between;
 }
 .carousel{
-  margin-top: -24px;
+  margin-top: -47px;
   padding:0;
 }
 
@@ -585,6 +631,16 @@ word-wrap: break-word;
   align-items: center;
   justify-content: center;
   flex-direction: column-reverse;
+}
+.titulo{
+
+    top: 55%;
+    left: 50%;
+
+
+}
+.titulo p{
+  font-size: 2.5rem;
 }
 
 

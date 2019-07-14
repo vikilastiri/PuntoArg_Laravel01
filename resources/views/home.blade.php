@@ -4,7 +4,7 @@
 
 <section class="carousel">
   <div class="titulo">
-    <p>Excursiones por todo el País</p>
+    <p>Atracciones por todo el País</p>
   </div>
     <div class="">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

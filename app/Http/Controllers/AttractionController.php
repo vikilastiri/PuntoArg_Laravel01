@@ -64,17 +64,17 @@ class AttractionController extends Controller
         //Paso 2: Antes vamos a validar los del formulario
 
         $rules = [ //https://laravel.com/docs/5.8/validation#rule-size
-          "name" => "string|max:255|filled",
-          "description" => "string",
+          "name" => "filled|string |max:255",
+          "description" => "filled|string",
           "featured_img" => "image",
           "categoy_id"=>"string",
           "location_id"=>"string",
         ];
         $messages = [
-          "filled" => ":attribute no puede estar vacío.",
-          "string" => ":attribute es debe ser texto.",
+          "filled" => "El campo no puede estar vacío.",
+          "string" => "El campo  debe ser texto.",
           "max" => ":attribute tiene un máximo de :max",
-          "image"=>"el archivo debe ser del tipo .jpeg, .png, .bmp, .gif, o .svg"
+          "image"=>"El archivo debe ser del tipo .jpeg, .png, .bmp, .gif, o .svg"
         ];
 
         $this->validate($request, $rules, $messages); //Son 3 arrays asociativos

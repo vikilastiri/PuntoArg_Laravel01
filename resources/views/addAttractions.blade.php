@@ -15,30 +15,41 @@
 
         <div class="card-body registro2">
             <form class="" action="/addAttractions" method="POST" enctype="multipart/form-data">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                    {{-- @dd($errors->all()) --}}
-                    <li>{{$error}}</li>
-                    @endforeach
-                </ul>
+                
                 @csrf
                 <div class="form-group form-row align-items-center">
 
                     <div class="col-md-6">
-                        <input type="text" id="name" class="form-control" name="name" value="{{ old('name') }}" placeholder="Nombre" autofocus>
+                        <label for="description">Nombre Atracción</label>
+                        <input type="text" id="attraction-name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}"  autofocus>  @error('name')
+                              <span class="invalid-feedback" role="alert">
+                                  <strong>{{ $message }}</strong>
+                              </span>
+                          @enderror
                     </div>
                 </div>
                 <div class="form-group form-row align-items-center">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="description">Descripción</label>
-                        <textarea style="width:600px; height:200px;" id="description" name="description" value="" autofocus>
+                        <textarea class=" form-control @error('description') is-invalid @enderror"  id="description" name="description" value="" autofocus>
 
               </textarea>
+              @error('description')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
                     </div>
+
                 </div>
                 <div class="form-group form-row align-items-center">
-                    <div class="col-md-6">
-                        <input type="file" id="featured_img" class="form-control" name="featured_img" value="" required  autofocus>
+                    <div class="col-md-12">
+                        <input class="form-control @error('featured_img') is-invalid @enderror"type="file" id="featured_img" class="form-control" name="featured_img" value="" required  autofocus>
+                          @error('featured_img')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                     </div>
                 </div>
 
@@ -64,7 +75,7 @@
 
                 <div class="form-group row  ">
                     <div class="col-md-6">
-                        <button class="btn btn-info" type="submit">Guardar</button>
+                        <button class="btn btn-primary" type="submit">Guardar</button>
 
                     </div>
                 </div>

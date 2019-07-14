@@ -53,7 +53,7 @@
                 <div class="form-group form-row align-items-center">
                     <div class="col-md-12">
                         <label for="featured_img">Imagen</label>
-                        <input type="file" id="featured_img" class="form-control @error('featured_img') is-invalid @enderror" name="featured_img" value="" required  autofocus>  @error('featured_img')
+                        <input type="file" id="featured_img" class="form-control  @error('featured_img') is-invalid @enderror " name="featured_img" value="" required  autofocus>  @error('featured_img')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -64,7 +64,7 @@
 
                 <div class="form-group row  ">
                     <div class="col-md-6">
-                        <button class="btn btn-info" type="submit">Guardar</button>
+                        <button class="btn btn-primary" type="submit">Guardar</button>
 
                     </div>
                 </div>

@@ -34,7 +34,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-blue shadow-sm">
             <div class="container">
                 <a class="marcalogo" href="{{ url('/') }}">
-                    {{ config('', 'PuntoArg') }}
+                  PuntoARG
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon "></span>
@@ -75,13 +75,10 @@
                       </li>
                         <!-- Authentication Links -->
                         @guest
+                          @if (Route::has('register'))
                             <li class="nav-item">
                                 <a class="linkmenu" href="{{ route('login') }}">{{ __('ingresar') }} </a>
                             </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="linkmenu" href="{{ route('register') }}">{{ __('Registrarse') }}</a>
-                                </li>
                             @endif
                         @else
                             <li class="nav-item dropdown">

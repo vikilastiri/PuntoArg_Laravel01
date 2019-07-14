@@ -18,7 +18,7 @@
                         <div class="form-group form-row align-items-center">
                             {{-- <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail') }}</label> --}}
 
-                            <div class=" datosUsuario ">
+                            <div class="datosUsuario">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required placeholder="E-mail" autocomplete="email" autofocus>
                                   <i class="fa fa-envelope" ></i>
 
@@ -49,7 +49,7 @@
                         </div>
 
                         <div class="form-group ">
-                            <div class="col-md-6 offset-md-4">
+                            <div class="crearCuenta">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
@@ -61,7 +61,7 @@
                         </div>
 
                         <div class="form-group form-row align-items-center mb-0">
-                            <div class="col-md-8 offset-md-4 ">
+                            <div class="crearCuenta">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Ingresar') }}
                                 </button>
@@ -72,12 +72,16 @@
                                     </a>
                                 @endif
                             </div>
+
                         </div>
-                        <div class="crearCuenta">
-                  				<div class="">
-                  					<p>¿No tienes una cuenta?</p>
-                  					<p> <a href="registro.php">CREAR CUENTA</a> </p>
-                  				</div>
+                        <div class="form-group form-row align-items-center mb-0">
+                          <div class="crearCuenta">
+                            <p>¿No tienes una cuenta?</p>
+                            <p> <a class=" btn btn-link"href="/register">CREAR CUENTA</a> </p>
+                          </div>
+                        </div>
+
+
                     </form>
                 </div>
             </div>

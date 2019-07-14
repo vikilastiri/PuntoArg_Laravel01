@@ -384,6 +384,23 @@ flex-wrap: wrap;
 /*---------------------*/
 
 /* REGISTRO Y LOGIN */
+/* .invalid-feedback{
+  display: flex;
+  align-items: center;
+} */
+.crearCuenta{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.card-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
 .card-header{
   background-color:#0D47A1;
   color: white;
@@ -407,7 +424,7 @@ flex-wrap: wrap;
   } */
 
 .datosUsuario input[type="email"], input[type="password"], input[type="text"]{
-  padding-left: 45px;
+  padding-left: 40px;
   outline: none;
   box-sizing: border-box;
   width:300px;
@@ -420,7 +437,7 @@ flex-wrap: wrap;
 }
 .datosUsuario i {
   position: absolute;
-  left: 8%;
+  left: 5%;
   /*top: 35%;*/
   top: 13px;
   color: #aaa;
@@ -528,12 +545,15 @@ text-decoration: none;
 /* MEDIA  */
 @media (min-width:540px){
   .datosUsuario i {
-    left: 6%;
+    left: 5%;
 
 
   }
 }
 @media (min-width:768px) {
+  .card{
+    margin-top: 22px;
+  }
   .tj-descuento{
     display: flex;
     justify-content: space-between;
@@ -550,18 +570,8 @@ text-decoration: none;
     font-size: 1.8rem;
   }
 
-  /* .datosUsuario input[type="email"], input[type="password"], input[type="text"]{
-    padding-left: 45px;
-    outline: none;
-    box-sizing: border-box;
-    width:30vw;
-
-
-
-  } */
-
   .datosUsuario i {
-    left: 8%;
+    left: 5%;
   }
   .articulo{
     width:20%;
@@ -591,8 +601,11 @@ text-decoration: none;
 
 }
   @media (min-width:1024px) {
+    .card{
+      margin-top: 25px;
+    }
     .datosUsuario i {
-      left: 8%;
+      left: 5%;
     }
     .registro2{
       flex-direction:column;

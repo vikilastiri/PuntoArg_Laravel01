@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Attraction;
 use App\Category;
+use App\Location;
 use Illuminate\Http\Request;
 
 
@@ -46,8 +47,9 @@ class AttractionController extends Controller
     public function create()
     {
       $categories=Category::all();
+        $locations=Location::all();
 
-        return view('addAttractions')->with('categories', $categories);
+        return view('addAttractions')->with('categories', $categories)->with('locations', $locations);
     }
 
     /**
@@ -66,6 +68,7 @@ class AttractionController extends Controller
           "description" => "string",
           "featured_img" => "image",
           "categoy_id"=>"string",
+          "location_id"=>"string",
         ];
         $messages = [
           "filled" => ":attribute no puede estar vacío.",
@@ -88,6 +91,7 @@ class AttractionController extends Controller
         $attraction->name = $request->name;
         $attraction->description = $request->description;
         $attraction->category_id= $request->category_id;
+        $attraction->location_id= $request->location_id;
 
         // dd($request, $post);
         $attraction->save();

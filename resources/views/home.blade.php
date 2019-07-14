@@ -15,13 +15,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="http://placeimg.com/960/400/arch" class="d-block w-100" alt="...">
+                    <img src="\storage\attractions\4Q8Kx3U0H9Xlj7qOrHonZynhpJF1OsEcW5is5t1i.jpeg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="http://placeimg.com/960/400/animals" class="d-block w-100" alt="...">
+                    <img src="\storage\attractions\89euzarOCD8zCf22aTlhjqUKpfWLIS8NSd9Usr8A.jpeg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="http://placeimg.com/960/400/nature" class="d-block w-100" alt="...">
+                    <img src="\storage\attractions\qn2gzfDEXnwFBV7GebBAoVq6JjJStQqzFYMwdYol.jpeg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

@@ -39,7 +39,8 @@ body{
 }
 
 .carousel{
-  margin-top: -47px;
+    margin-top: -24px;
+  position: relative;
 }
 /* NAV */
 
@@ -176,7 +177,7 @@ flex-wrap: wrap;
     /* padding: 10px 0; */
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 25%;
+    top: 7%;
     left: 50%;
     font-family: 'Oswald';
     text-shadow: 2px -2px 1px rgba(0,0,0,0.5);
@@ -538,6 +539,16 @@ text-decoration: none;
     justify-content: space-between;
 
   }
+  .titulo{
+
+      top: 22%;
+      left: 50%;
+
+
+  }
+  .titulo p{
+    font-size: 1.8rem;
+  }
 
   /* .datosUsuario input[type="email"], input[type="password"], input[type="text"]{
     padding-left: 45px;
@@ -617,7 +628,7 @@ text-decoration: none;
   justify-content: space-between;
 }
 .carousel{
-  margin-top: -47px;
+  margin-top: -24px;
   padding:0;
 }
 
@@ -634,7 +645,7 @@ word-wrap: break-word;
 }
 .titulo{
 
-    top: 55%;
+    top: 25%;
     left: 50%;
 
 

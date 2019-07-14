@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+
+<section class="carousel">
   <div class="titulo">
     <p>Excursiones por todo el País</p>
-  </div>>
-<section class="carousel">
-
+  </div>
     <div class="">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">

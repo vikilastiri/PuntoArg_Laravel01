@@ -3,7 +3,10 @@
 @section('content')
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> dd9abf39630d236f9d159d35c211d58d244ea509
 {{--
 <h1>Lista de busqueda</h1>
 <ul>

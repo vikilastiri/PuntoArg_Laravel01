@@ -17,13 +17,8 @@ a{
 
 /* MAIN*/
 .fondo{
-<<<<<<< HEAD
 
    opacity:0.1;
-=======
-  background-image: url("/storage/img/fondo.jpg");
-   opacity:0.2;
->>>>>>> abc19a1b001453372077f169f23531f3ffeea221
    position:absolute;
    top:70px;
    bottom:0;
@@ -39,13 +34,10 @@ a{
 body{
 
   font-family: 'Roboto Condensed', sans-serif;
-<<<<<<< HEAD
   background-image: url(/puntoarg-bg.png);
 
 
 
-=======
->>>>>>> abc19a1b001453372077f169f23531f3ffeea221
 }
 
 .carousel{
@@ -280,11 +272,7 @@ flex-wrap: wrap;
 
 .buscador input[type="text"]
 {
-<<<<<<< HEAD
   width: 65vw;
-=======
-  width: 240px;
->>>>>>> abc19a1b001453372077f169f23531f3ffeea221
   outline: none;
   margin-top: 25px;
 

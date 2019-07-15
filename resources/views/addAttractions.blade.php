@@ -9,7 +9,7 @@
 
   {{-- <meta name="csrf-token" content="{{ csrf_token() }}"> --}}
 
-  
+
 
 
   <div class="fondo">
@@ -74,7 +74,7 @@
                                  {{-- PROVINCIAS --}}
                 <div class="form-group form-row align-items-center">
                   <label for="locations">Provincia</label>
-                  <select class="form-control" name="location_id">
+                  <select id="location_id" class="form-control" name="location_id">
 
                   </select>
                 </div>

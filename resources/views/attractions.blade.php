@@ -3,10 +3,7 @@
 @section('content')
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> dd9abf39630d236f9d159d35c211d58d244ea509
 {{--
 <h1>Lista de busqueda</h1>
 <ul>
@@ -53,7 +50,7 @@
               <h5 class="att_name">{{$attraction->name}}</h5>
               {{-- <p class="txt-desc">{{$attraction->description}}</p> --}}
               <ul class="consulta-desta">
-                <li class="consulta"><a href="#">+ Info</a></li>
+                <li class="consulta"><a href="#" data-name="{{$attraction->name}}" data-description="{{ $attraction->descrption }}">+ Info</a></li>
               </ul>
 
                 </article>

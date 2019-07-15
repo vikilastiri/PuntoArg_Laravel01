@@ -13,12 +13,9 @@
 
   <!-- Scripts -->
   <script src="{{ asset('js/app.js') }}" defer></script>
-
-                            {{-- Extra JS --}}
-
+  {{-- Extra JS --}}
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="{{ asset('js/extra.js') }}" defer></script>
-
 
   <!-- Fonts -->
   <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -171,5 +168,7 @@
       </footer>
     @show
   </div>
+
+
 </body>
 </html>

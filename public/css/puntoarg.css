@@ -16,18 +16,9 @@ a{
 }
 
 /* MAIN*/
-<<<<<<< HEAD
 .fondo{
 
    opacity:0.1;
-=======
-/* .fondo{
-   opacity:0.1;
-
-  background-image: url("/storage/img/fondo.jpg");
-   opacity:0.2;
-
->>>>>>> dd9abf39630d236f9d159d35c211d58d244ea509
    position:absolute;
    top:70px;
    bottom:0;

@@ -74,8 +74,8 @@
                 <a class="dropdown-item" href="#">Tarjeta 7 Días</a>
                 <a class="dropdown-item" href="#">Tarjeta 15 Días</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Formas de pago</a>
-                <a class="dropdown-item" href="#">FAQ</a>
+                <a class="dropdown-item" href="/faq">Formas de pago</a>
+                <a class="dropdown-item" href="/faq">FAQ</a>
               </div>
             </li>
             {{-- <li class="nav-item dropdown">

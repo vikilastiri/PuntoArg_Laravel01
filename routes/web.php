@@ -26,6 +26,9 @@ Route::get('/home', 'HomeController@index')->name('home');
   Route::get('/attractions', 'AttractionController@index');
 Route::get('/attractions/buscar', 'AttractionController@search');
 Route::get('/attractions/{id}', 'AttractionController@show');
+Route::get('faq',function(){
+  return view('faq');
+ });
 
 
 

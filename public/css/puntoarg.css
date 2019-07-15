@@ -16,14 +16,12 @@ a{
 }
 
 /* MAIN*/
-.fondo{
-<<<<<<< HEAD
-
+/* .fondo{
    opacity:0.1;
-=======
+
   background-image: url("/storage/img/fondo.jpg");
    opacity:0.2;
->>>>>>> abc19a1b001453372077f169f23531f3ffeea221
+
    position:absolute;
    top:70px;
    bottom:0;
@@ -35,7 +33,7 @@ a{
    background-repeat: repeat;
 
 
-}
+} */
 body{
 
   font-family: 'Roboto Condensed', sans-serif;
@@ -208,7 +206,7 @@ flex-wrap: wrap;
 
 /*SECCION PRINCIPAL*/
 .faq{
-  margin-top: 90px;
+  margin-top: 30px;
 }
 .preguntas{
     max-width: 50%;
@@ -274,7 +272,7 @@ flex-wrap: wrap;
   font-size: 1.4rem;
 }
 .preguntas{
-  background-color: yellow;
+  background-color: white;
 
 }
 

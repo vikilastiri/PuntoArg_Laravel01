@@ -17,7 +17,7 @@ class MDUserClient
     {
       $user_role=\Auth::user();
       if($user_role->type_users!=2){
-        return route('home');
+          return redirect('home');
       }
         return $next($request);
     }

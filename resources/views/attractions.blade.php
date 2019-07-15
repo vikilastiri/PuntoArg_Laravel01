@@ -2,7 +2,6 @@
 
 @section('content')
 
-
 {{--
 <h1>Lista de busqueda</h1>
 <ul>
@@ -16,12 +15,14 @@
 
       <!--DESTACADOS-->
       <section class="destacados">
+
         <div class="">
           <span class=" flex-container">
               {{-- BUSCADOR --}}
 
-            <form class=" buscador" action="/attractions/buscar" method="get" >
+            <form class="buscador" action="/attractions/buscar" method="get" >
               @csrf
+              
               <input class=""type="text" name="search" value="" >
               <button
               class=" btn btn-primary" type="submit"><i class="fas fa-search"></i></button>

@@ -60,7 +60,9 @@
     </span>
 
 </section>
+
 <section class="destacados">
+
 <div class="flex-container2  container  ">
     @forelse ($attractions as $attraction)
 

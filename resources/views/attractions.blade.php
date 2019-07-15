@@ -2,6 +2,7 @@
 
 @section('content')
 
+  
 
 {{--
 <h1>Lista de busqueda</h1>

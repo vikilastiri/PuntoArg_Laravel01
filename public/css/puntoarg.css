@@ -17,7 +17,7 @@ a{
 
 /* MAIN*/
 .fondo{
-  background-image: url("/storage/img/fondo.jpg");
+
    opacity:0.1;
    position:absolute;
    top:0;
@@ -32,7 +32,7 @@ a{
 body{
 
   font-family: 'Roboto Condensed', sans-serif;
-
+  background-image: url(/puntoarg-bg.png);
 
 
 
@@ -171,7 +171,7 @@ flex-wrap: wrap;
 }
 .titulo{
     color: #fff;
-    text-transform: uppercase;
+
     display: inline-block;
     text-align: center;
     /* padding: 10px 0; */
@@ -270,7 +270,7 @@ flex-wrap: wrap;
 
 .buscador input[type="text"]
 {
-  width: 300px;
+  width: 65vw;
   outline: none;
   margin-top: 25px;
 
@@ -291,7 +291,8 @@ flex-wrap: wrap;
   padding: 0;
   justify-content: center;
   text-align:center;
-    background-color: #0064ff30;
+    /* background-color: #0064ff30; */
+
   padding-bottom: 10px;
   width: 100vw;
 
@@ -373,6 +374,9 @@ flex-wrap: wrap;
 }
 .total h5{
   margin-top: 10px;
+}
+.navbar-nav{
+  font-size: large;
 }
 
 .search-attractions{
@@ -551,8 +555,14 @@ text-decoration: none;
   }
 }
 @media (min-width:768px) {
+
+  .titulo h1{
+    font-size: 3vw;
+  }
+
   .card{
     margin-top: 22px;
+    width:450px;
   }
   .tj-descuento{
     display: flex;
@@ -646,6 +656,7 @@ text-decoration: none;
 .carousel{
   margin-top: -24px;
   padding:0;
+
 }
 
 .txt-desc{
@@ -659,6 +670,9 @@ word-wrap: break-word;
   justify-content: center;
   flex-direction: column-reverse;
 }
+
+
+
 .titulo{
 
     top: 25%;

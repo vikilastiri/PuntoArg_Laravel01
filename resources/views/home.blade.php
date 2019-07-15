@@ -4,7 +4,7 @@
 
 <section class="carousel">
   <div class="titulo">
-    <p>Atracciones por todo el País</p>
+    <h1>PuntoARG es tu tarjeta de descuentos para turismo en la Argentina.</h1>
   </div>
     <div class="">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

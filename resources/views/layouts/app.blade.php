@@ -97,7 +97,7 @@
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item"href="/cart">Carrito</a>
 
-                @if (Auth::user()->is_admin == 1)
+                @if (Auth::user()->type_users == 1)
                   <a class="dropdown-item"href="/addAttractions">Añadir Atracción</a>
                   <a class="dropdown-item"href="/addVoucher">Añadir Tarjeta</a>
                 @endif

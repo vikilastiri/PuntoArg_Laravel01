@@ -2,11 +2,7 @@
 
 @section('content')
 
-<<<<<<< HEAD
-  
 
-=======
->>>>>>> abc19a1b001453372077f169f23531f3ffeea221
 {{--
 <h1>Lista de busqueda</h1>
 <ul>
@@ -27,7 +23,7 @@
 
             <form class="buscador" action="/attractions/buscar" method="get" >
               @csrf
-              
+
               <input class=""type="text" name="search" value="" >
               <button
               class=" btn btn-primary" type="submit"><i class="fas fa-search"></i></button>

@@ -549,15 +549,23 @@ text-decoration: none;
 @media (min-width:540px){
   .datosUsuario i {
     left: 5%;
-
-
   }
+
+  .h1, h1 {
+    font-size: 1.55rem;
+  }
+
 }
 @media (min-width:768px) {
 
   .titulo h1{
     font-size: 3vw;
   }
+
+.w10-0{
+  height:33vh;
+
+}
 
   .card{
     margin-top: 22px;
@@ -691,3 +699,15 @@ word-wrap: break-word;
 
 
   }
+
+  @media (max-width:540px) {
+
+    .titulo h1{
+      font-size: 7vw;
+    }
+
+  .w100{
+    height:33vh;
+    width: unset;
+  }
+}

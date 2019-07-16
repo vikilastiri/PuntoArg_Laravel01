@@ -40,7 +40,7 @@
 <article class="destacado card text-center">
 
   <a href="#" class="desta-link desta"><img src="/storage/vouchers/{{$voucher->featured_img}}" alt=""> </a>
-    <h5 class="att_name">{{$voucher->name}} - AR$ {{ $voucher->price }}</h5>
+    <h4 class="att_name">{{$voucher->name}} - AR$ {{ $voucher->price }}</h4>
     <p class="txt-desc">{{$voucher->description}}</p>
     <ul class="">
       <li class=""><a href="/vouchers/{{$voucher->id}}/addtocart" class="btn btn-primary">Comprar</a></li>
@@ -56,7 +56,7 @@
 
 <section class="titulo-seccion">
     <span class="">
-        <h4 class="titulo-desta">Atracciones bonificadas por PuntoARG</h4>
+        <h4 class="titulo-desta">Nuestras Atracciones Bonificadas:</h4>
     </span>
 
 </section>

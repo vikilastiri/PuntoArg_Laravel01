@@ -68,7 +68,7 @@ class AttractionController extends Controller
           "description" => "filled|string",
           "featured_img" => "image",
           "categoy_id"=>"string",
-          "location_id"=>"string",
+          //"location_id"=>"string",
         ];
         $messages = [
           "filled" => "El campo no puede estar vacío.",
@@ -91,7 +91,7 @@ class AttractionController extends Controller
         $attraction->name = $request->name;
         $attraction->description = $request->description;
         $attraction->category_id= $request->category_id;
-        $attraction->location_id= $request->location_id;
+        //$attraction->location_id= $request->location_id;
 
         // dd($request, $post);
         $attraction->save();

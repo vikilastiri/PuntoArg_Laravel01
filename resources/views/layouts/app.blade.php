@@ -78,7 +78,7 @@
           @guest
             @if (Route::has('register'))
               <li class="nav-item">
-                <a class="linkmenu" href="{{ route('login') }}">{{ __('Login') }} </a>
+                <a class="linkmenu" href="{{ route('login') }}">{{ __('Registro/Login') }} </a>
               </li>
             @endif
           @else
@@ -127,7 +127,7 @@
           <div class="infocard">
             <div class="info">
 
-              <li><a href="#"><i class="far fa-credit-card"></i><br>Formas de Pago</a>
+              <li><a href="/faq"><i class="far fa-credit-card"></i><br>Formas de Pago</a>
               </li>
 
             </div>
@@ -135,7 +135,7 @@
             <div class="info">
 
 
-              <li><a href="#"><i class="fas fa-store"></i><br>PostVenta</a></li>
+              <li><a href="/faq"><i class="fas fa-store"></i><br>PostVenta</a></li>
             </div>
           </div>
         </ul>
@@ -170,7 +170,7 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="{{ asset('js/extra.js') }}" defer></script>
 
-@stack('scripts')
+  @stack('scripts')
 
 </body>
 </html>

@@ -46,7 +46,9 @@
               @foreach ($attractions as $attraction)
           <article class="destacado">
 
-            <a href="#" class="desta-link desta"><img src="/storage/attractions/{{$attraction->featured_img}}" alt=""> </a>
+            {{-- <a href="" class="desta-link desta"> --}}
+              <img src="/storage/attractions/{{$attraction->featured_img}}" alt="">
+            {{-- </a> --}}
               <h5 class="att_name">{{$attraction->name}}</h5>
               {{-- <p class="txt-desc">{{$attraction->description}}</p> --}}
               <ul class="consulta-desta">

@@ -561,7 +561,7 @@ text-decoration: none;
 
   .card{
     margin-top: 22px;
-    width:450px;
+    /* width:450px; */
   }
   .tj-descuento{
     display: flex;

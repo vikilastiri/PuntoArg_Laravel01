@@ -9,14 +9,14 @@ window.onload=function(){
   })
   .then(function(data){
     console.log(data)
-    provincias=data.provincias;
+    provincias=_.sortBy(data.provincias, 'nombre')
 
     nombres=[];
 
      form = document.querySelector('#location_id');
 
     for (var i = 0; i < provincias.length; i++) {
-      form.innerHTML += "<option value=" + data.provincias[i].id+ ">" + data.provincias[i].nombre + "</option>"
+      form.innerHTML += "<option value=" + provincias[i].id+ ">" + provincias[i].nombre + "</option>"
 
       // console.log("<option value=" + data.provincias[i].id+ ">" + data.provincias[i].nombre + "</option>")
     }
@@ -36,7 +36,7 @@ window.onload=function(){
       //  console.log(e.dataset.name);
       e.addEventListener("click", function(){
         event.preventDefault();
-        swal(e.dataset.name, "...and here's the text!");
+        swal(e.dataset.name, e.dataset.description);
       })
     })
   }

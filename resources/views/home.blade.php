@@ -72,7 +72,7 @@
     <h5 class="att_name">{{$attraction->name}}</h5>
     {{-- <p class="txt-desc">{{$attraction->description}}</p> --}}
     <ul class="consulta-desta">
-      <li class="consulta"><a href="#">+ Info</a></li>
+      <li class="consulta"><a href="#"  data-name="{{$attraction->name}}" data-description="{{ $attraction->description }}">+ Info</a></li>
     </ul>
 
       </article>

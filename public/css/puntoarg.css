@@ -30,14 +30,11 @@ a{
    background-repeat: repeat;
 
 
-} */
-body{
+}
 
+body{
   font-family: 'Roboto Condensed', sans-serif;
   background-image: url(/puntoarg-bg.png);
-
-
-
 }
 
 .carousel{

@@ -12,10 +12,6 @@
   <title>{{ config('views.name', 'PuntoARG - Tarjeta de descuentos para turismo en la Argentina') }}</title>
 
   <!-- Scripts -->
-  <script src="{{ asset('js/app.js') }}" defer></script>
-  {{-- Extra JS --}}
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script src="{{ asset('js/extra.js') }}" defer></script>
 
   <!-- Fonts -->
   <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -67,9 +63,9 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <span class="dropdown-header">.ArgPass</span>
                 <span class=""></span>
-                <a class="dropdown-item" href="#">Tarjeta 3 Días</a>
-                <a class="dropdown-item" href="#">Tarjeta 7 Días</a>
-                <a class="dropdown-item" href="#">Tarjeta 15 Días</a>
+                <a class="dropdown-item" href="/vouchers">Tarjeta 3 Días</a>
+                <a class="dropdown-item" href="/vouchers">Tarjeta 7 Días</a>
+                <a class="dropdown-item" href="/vouchers">Tarjeta 15 Días</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="/faq">Formas de pago</a>
                 <a class="dropdown-item" href="/faq">FAQ</a>
@@ -169,6 +165,12 @@
     @show
   </div>
 
+
+  <script src="{{ asset('js/app.js') }}" defer></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="{{ asset('js/extra.js') }}" defer></script>
+
+@stack('scripts')
 
 </body>
 </html>

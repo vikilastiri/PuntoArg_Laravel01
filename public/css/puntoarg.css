@@ -176,14 +176,14 @@ flex-wrap: wrap;
     /* padding: 10px 0; */
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 6%;
+    top: 4.5%;
     left: 50%;
     font-family: 'Oswald';
-    text-shadow: 2px -2px 1px rgba(0,0,0,0.4);
+    text-shadow: 2px -1px 1px rgba(0,0,0,0.8);
      z-index:100;
 }
 .titulo p{
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 .hero img{
   margin: 0auto;
@@ -426,12 +426,13 @@ flex-wrap: wrap;
     background-color:#0064ff30;
   } */
 
-.datosUsuario input[type="email"], input[type="password"], input[type="text"]{
+.datosUsuario input[type="email"], input[type="password"], input[id="username"]{
   padding-left: 40px;
   outline: none;
   box-sizing: border-box;
   width:300px;
 }
+
 
 .datosUsuario {
   position: relative;
@@ -552,12 +553,13 @@ text-decoration: none;
 
 
   }
+  .titulo p{
+    font-size: 1.2rem;
+  }
 }
 @media (min-width:768px) {
 
-  .titulo h1{
-    font-size: 3vw;
-  }
+
 
   .card{
     margin-top: 22px;
@@ -570,13 +572,13 @@ text-decoration: none;
   }
   .titulo{
 
-      top: 22%;
+      top: 19%;
       left: 50%;
 
 
   }
   .titulo p{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .datosUsuario i {
@@ -610,6 +612,9 @@ text-decoration: none;
 
 }
   @media (min-width:1024px) {
+    input[id="nameVoucher"]{
+      width: 400px;
+    }
 
     .buscador input[type="text"]
     {
@@ -680,13 +685,13 @@ word-wrap: break-word;
 
 .titulo{
 
-    top: 25%;
+    top: 21%;
     left: 50%;
 
 
 }
 .titulo p{
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 

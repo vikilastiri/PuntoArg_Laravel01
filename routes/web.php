@@ -41,11 +41,11 @@ Route::get('/vouchers/{id}', 'VoucherController@show');
 // RUTAS ADMIN
 Route::group(['middleware'=>'checkAdmin'],function(){
   Route::get('/addAttractions', function(){
-    return view('addAttractions');
+    return view('addAttractions')->middleware('auth');
    });
-  Route::get('/addAttractions', 'AttractionController@create');
+  Route::get('/addAttractions', 'AttractionController@create')->middleware('auth');
   Route::post('/addAttractions', 'AttractionController@store');
-  Route::get('/addVoucher', 'VoucherController@create');
+  Route::get('/addVoucher', 'VoucherController@create')->middleware('auth');
   Route::post('/addVoucher', 'VoucherController@store');
 });
 

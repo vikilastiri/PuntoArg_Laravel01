@@ -75,7 +75,10 @@
                 <div class="form-group form-row align-items-center">
                   <label for="locations">Provincia</label>
                   <select id="location_id" class="form-control" name="location_id">
+                    @foreach ($locations as $location)
+                      <option value="{{ $location->id }}">{{$location->name}}</option>
 
+                    @endforeach
                   </select>
                 </div>
 

@@ -17,7 +17,7 @@
   </div>
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-8">
+      <div class="col-md-6">
         <div class="card">
           <div class="card-header">{{ __('AGREGAR ATRACCION') }}
           </div>
@@ -29,8 +29,8 @@
               <div class="form-group form-row align-items-center">
 
                 <div class="col-md-6">
-                  <label for="description">Nombre Atracción</label>
-                  <input type="text" id="attraction-name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}"  autofocus>  @error('name')
+                    <label for="name">Nombre</label>
+                    <input type="text" id="nameVoucher" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}">  @error('name')
                     <span class="invalid-feedback" role="alert">
                       <strong>{{ $message }}</strong>
                     </span>
